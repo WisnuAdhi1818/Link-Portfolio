@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Wisnu Adhi</title>
+    <!-- link style -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- link icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+  </head>
+  <body>
+    <section class="navbar" id="navbar">
+      <div class="navbar-container">
+        <div class="icon">
+          <a href="https://www.instagram.com/wisnuadhi00/"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.facebook.com/wisnu.adhiwicaksono.52/"><i class="bi bi-facebook"></i></a>
+          <a href="https://x.com/wisnuadhi1818"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://www.linkedin.com/in/wisnu-adhi-1b775930a/"><i class="bi bi-linkedin"></i></a>
+        </div>
+        <div class="language-select">
+          <select id="languageSwitcher">
+            <option value="id">Bahasa Indonesia</option>
+            <option value="en">English</option>
+          </select>
+        </div>
+      </div>
+    </section>
+    <section class="hero" id="hero">
+      <div class="slider">
+        <div class="slide active">
+          <h1>WISNU ADHI<br />WICAKSONO</h1>
+          <p id="hero-content1">Halo Perkenalkan nama saya Wisnu Adhi Wicaksono, saya saat ini sedang tahap belajar menjadi Front-End Developer</p>
+        </div>
+        <div class="slide1">
+          <h1>CREATIVE<br />PORTFOLIO</h1>
+          <hr />
+          <p id="hero-content2">Saya menyukai Informasi Teknologi dan Seni, selayaknya teknologi saat ini juga bagian dari seni</p>
+        </div>
+        <div class="slide2">
+          <h1>MY GITHUB PAGES</h1>
+          <p id="hero-content3">Kunjungi portfolio saya lebih lengkap di github</p>
+          <div class="button-hero">
+            <a href="https://github.com/WisnuAdhi1818?tab=repositories">Visit Github <i class="bi bi-github"></i></a>
+          </div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      </div>
+    </section>
+    <section class="content-container">
+      <div class="about" id="about">
+        <div class="about-container">
+          <a id="aboutPage">
+            <h2 id="about-content1">Tentang Saya</h2>
+            <div class="icon-about"><i class="bi bi-person-circle"></i></div>
+          </a>
+        </div>
+      </div>
+      <div class="project" id="project">
+        <div class="project-container">
+          <div class="project-content">
+            <a href="https://wisnuadhi1818.github.io/cosmetic-website-design/" id="project1" target="_blank">-- Contoh Website Kosmetik --</a>
+            <a href="https://wisnuadhi1818.github.io/Cooking-Blog-Website/" id="project2" target="_blank">-- Contoh Website Blog Masakan --</a>
+            <a href="https://wisnuadhi1818.github.io/Pet-shop/" id="project3" target="_blank">-- Contoh Website Toko Hewan --</a>
+            <a href="https://github.com/WisnuAdhi1818?tab=repositories" target="_blank" class="github"
+              ><p id="project4">-- Lihat Lainnya di Github</p>
+              <i class="bi bi-github"> --</i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="skills" id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+          <div class="box">
+            <a><img src="img/html.svg" alt="" /></a>
+            <a><img src="img/css.svg" alt="" /></a>
+          </div>
+          <div class="box">
+            <a><img src="img/javascript.svg" alt="" /></a>
+            <a><img src="img/figma.svg" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Modal -->
+    <div id="modal" class="modalPage">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Profil</h2>
+        <figure>
+          <img src="img/DSC_0241.jpg" alt="" />
+        </figure>
+        <p id="bio">
+          Nama Saya Wisnu Adhi Wicaksono. Saya kelahiran pada tanggal 18 Oktober tahun 2000 dan asal tempat tinggal di Pacitan. Selain itu saya merupakan lulusan dari SMK Negeri 1 Pacitan kejuruan animasi pada tahun 2019. Saya sangat
+          menyukai hal tentang Seni dan Teknologi, seperti menggambar, bermain musik, editing, bermain game dan ngoding. Meskipun saya belum memiliki pengalaman kerja dibidang yang saya sukai tetapi saya masih tetap belajar mengasah
+          kemampuan saya agar menjadi lebih baik nantinya. Selain itu saya telah menyediakan beberapa file atau berkas untuk persyaratan kerja saya di bawah ini.
+        </p>
+        <button id="downloadBtn">Download Dokumen</button>
+      </div>
+    </div>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>
