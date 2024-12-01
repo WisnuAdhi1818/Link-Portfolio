@@ -132,8 +132,8 @@ close.onclick = function () {
 // btn download
 document.getElementById('downloadBtn').addEventListener('click', function () {
   const link = document.createElement('a');
-  link.href = 'Dokumen.pdf'; // Ganti dengan path file yang ingin kamu unduh
-  link.download = 'Dokumen.pdf'; // Ganti dengan nama file yang ingin diunduh
+  link.href = 'Dokumen_Lamaran.pdf'; // Ganti dengan path file yang ingin kamu unduh
+  link.download = 'Dokumen_Lamaran.pdf'; // Ganti dengan nama file yang ingin diunduh
   link.click();
 });
 document.getElementById('download').addEventListener('click', function () {
